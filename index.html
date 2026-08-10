@@ -1924,10 +1924,11 @@
             font-size: 0.9rem;
         }
 
+        /* ========== BOTÕES FLUTUANTES INVERTIDOS ========== */
         .back-to-top {
             position: fixed;
             bottom: 30px;
-            right: 30px;
+            left: 30px;
             width: 48px;
             height: 48px;
             background: var(--gradient);
@@ -1958,7 +1959,7 @@
         .floating-whatsapp {
             position: fixed;
             bottom: 30px;
-            left: 30px;
+            right: 30px;
             width: 58px;
             height: 58px;
             background: #25D366;
@@ -2222,13 +2223,6 @@
             .scroll-reveal-right.revealed {
                 transform: translateY(0);
             }
-            .floating-whatsapp {
-                bottom: 20px;
-                left: 20px;
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
-            }
             .about-text.highlight {
                 padding: 1rem;
                 border-left: none;
@@ -2245,6 +2239,20 @@
                 width: 150%;
                 height: 150%;
                 opacity: 0.15;
+            }
+            .back-to-top {
+                bottom: 20px;
+                left: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .floating-whatsapp {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
             }
         }
 
@@ -2273,13 +2281,6 @@
             .footer-links {
                 align-items: center;
             }
-            .back-to-top {
-                bottom: 20px;
-                right: 20px;
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-            }
             .stats-container {
                 grid-template-columns: 1fr;
             }
@@ -2292,13 +2293,6 @@
             .logo-img {
                 height: 45px;
                 width: 45px;
-            }
-            .floating-whatsapp {
-                bottom: 20px;
-                left: 20px;
-                width: 48px;
-                height: 48px;
-                font-size: 1.4rem;
             }
             .experience-card {
                 padding: 1.8rem 1.2rem;
@@ -2328,6 +2322,20 @@
                 width: 130%;
                 height: 130%;
                 opacity: 0.15;
+            }
+            .back-to-top {
+                bottom: 20px;
+                left: 20px;
+                width: 38px;
+                height: 38px;
+                font-size: 0.9rem;
+            }
+            .floating-whatsapp {
+                bottom: 20px;
+                right: 20px;
+                width: 48px;
+                height: 48px;
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -2941,15 +2949,16 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Back to top -->
+    <!-- ========== BOTÕES FLUTUANTES INVERTIDOS ========== -->
+    <!-- Back to top (agora na ESQUERDA) -->
     <div class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </div>
+
+    <!-- Floating WhatsApp (agora na DIREITA) -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- ========== SCRIPTS ========== -->
     <script>
